@@ -8,8 +8,8 @@ const darkRedColor = Color(0xFFFA695C);
 const lightRedColor = Color(0xFFFD685A);
 
 const purpleGradient = LinearGradient(
-  colors: <Color>[darkColor, midColor, lightColor],
-  stops: [0.0, 0.5, 1.0],
+  colors: <Color>[Color(0xffffae88), Color(0xff8f93ea)],
+  // stops: [0.0, 0.5, 1.0],
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,
 );
@@ -21,4 +21,5 @@ const redGradient = LinearGradient(
   end: Alignment.centerRight,
 );
 
-const USER_IMAGE='https://th.bing.com/th/id/R.0a06733de26c157b50cd2d72f3aac3c0?rik=E0URZZA9LzL%2fAg&pid=ImgRaw&r=0';
+const USER_IMAGE =
+    'https://th.bing.com/th/id/R.0a06733de26c157b50cd2d72f3aac3c0?rik=E0URZZA9LzL%2fAg&pid=ImgRaw&r=0';
