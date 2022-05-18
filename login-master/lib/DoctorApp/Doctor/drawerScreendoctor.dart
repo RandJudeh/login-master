@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:loginpage/DoctorApp/Doctor/configurationdoctor.dart';
 
+import '../chattingpage.dart';
 import '../drappointment/homeDrApp.dart';
 import '../loginpage/login/login_screen.dart';
 import 'doctorTable.dart';
@@ -41,7 +42,11 @@ class _DrawerScreenState extends State<DrawerScreen> {
                   child: Container(
                       child: InkWell(
                     onTap: () {
-                      print("element");
+                      Navigator.push(context, MaterialPageRoute(
+                        builder: (BuildContext context) {
+                          return ChattingPage();
+                        },
+                      ));
                     },
                     child: Row(
                       children: [
