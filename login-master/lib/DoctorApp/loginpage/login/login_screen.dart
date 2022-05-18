@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../widgets/curved_widget.dart';
+import '../../widgets/curved_widget.dart';
 import 'login_form.dart';
 
 class LoginScreen extends StatefulWidget {

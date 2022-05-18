@@ -1,7 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+
+import 'package:loginpage/DoctorApp/constantDrApp.dart';
 import 'package:loginpage/DoctorApp/Doctor/configurationdoctor.dart';
 import 'package:loginpage/DoctorApp/Doctor/screen2doctor.dart';
+
+import '../header_logo.dart';
+import '../my_header.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -60,14 +66,14 @@ class _HomeScreenState extends State<HomeScreen> {
                           }),
                   Column(
                     children: [
-                      Text('Location'),
+                      // Text('Location'),
                       Row(
                         children: [
-                          Icon(
-                            Icons.location_on,
-                            color: drawerColor,
-                          ),
-                          Text('Ukraine'),
+                          // Icon(
+                          //   Icons.location_on,
+                          //   color: drawerColor,
+                          // ),
+                          // Text('Ukraine'),
                         ],
                       ),
                     ],
@@ -94,124 +100,28 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
 
             Container(
-              height: 120,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: categories.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                      // child: Column(
-                      //   children: [
-                      //     Container(
-                      //
-                      //       padding: EdgeInsets.all(10),
-                      //       margin: EdgeInsets.only(left: 20),
-                      //       decoration: BoxDecoration(
-                      //         color: Colors.white,
-                      //         boxShadow: shadowList,
-                      //         borderRadius: BorderRadius.circular(10)
-                      //       ),
-                      //       child: Image.asset(categories[index]['iconPath'],       height: 50,
-                      //         width: 50,color: Colors.grey[700],),
-                      //     ),
-                      //     Text(categories[index]['name'])
-                      //   ],
-                      // ),
-                      );
-                },
+              height: 50,
+              child: Text(
+                "Doctor",
+                style: GoogleFonts.pacifico(
+                    fontWeight: FontWeight.w200,
+                    fontSize: 30,
+                    color: Color(0xff6a515e)),
               ),
             ),
-
-            // GestureDetector(
-            //   onTap: (){
-            //     Navigator.push(context, MaterialPageRoute(builder: (context)=>Screen2()));
-            //
-            //   },
-            //   child: Container(
-            //     height: 240,
-            //     margin: EdgeInsets.symmetric(horizontal: 20),
-            //     child: Row(
-            //       children: [
-            //         Expanded(
-            //           child: Stack(
-            //             children: [
-            //               Container(
-            //                 decoration: BoxDecoration(color: Colors.blueGrey[300],
-            //                 borderRadius: BorderRadius.circular(20),
-            //                   boxShadow: shadowList,
-            //                 ),
-            //                 margin: EdgeInsets.only(top: 50),
-            //               ),
-            //               Align(
-            //                 child: Hero(
-            //                     tag:1,child: Image.asset('images/pet-cat2.png')),
-            //               )
-            //
-            //             ],
-            //           ),
-            //         ),
-            //         Expanded(child: Container(
-            //           margin: EdgeInsets.only(top: 60,bottom: 20),
-            //           decoration: BoxDecoration(color: Colors.white,
-            //
-            //           boxShadow: shadowList,
-            //             borderRadius: BorderRadius.only(
-            //               topRight: Radius.circular(20),
-            //               bottomRight: Radius.circular(20)
-            //
-            //             )
-            //           ),
-            //
-            //         ))
-            //
-            //       ],
-            //     ),
-            //
-            //   ),
-            // ),
-            // Container(
-            //   height: 240,
-            //   margin: EdgeInsets.symmetric(horizontal: 20),
-            //   child: Row(
-            //     children: [
-            //       Expanded(
-            //         child: Stack(
-            //           children: [
-            //             Container(
-            //               decoration: BoxDecoration(color: Colors.orange[100],
-            //                 borderRadius: BorderRadius.circular(20),
-            //                 boxShadow: shadowList,
-            //               ),
-            //               margin: EdgeInsets.only(top: 50),
-            //             ),
-            //             Align(
-            //               child: Image.asset('images/pet-cat1.png'),
-            //             )
-            //
-            //           ],
-            //         ),
-            //       ),
-            //       Expanded(child: Container(
-            //         margin: EdgeInsets.only(top: 60,bottom: 20),
-            //         decoration: BoxDecoration(color: Colors.white,
-            //
-            //             boxShadow: shadowList,
-            //             borderRadius: BorderRadius.only(
-            //                 topRight: Radius.circular(20),
-            //                 bottomRight: Radius.circular(20)
-            //
-            //             )
-            //         ),
-            //
-            //       ))
-            //
-            //     ],
-            //   ),
-            //
-            // ),
-            SizedBox(
-              height: 550,
-            )
+            // SizedBox(
+            //   height: 550,
+            // )
+            Column(
+              children: <Widget>[
+                MyHeader(
+                  height: 535,
+                  imageUrl: 'assets/images/doctor.png',
+                  child: HeaderLogo(),
+                ),
+              ],
+            ),
+            Container(height: 100, child: Text("")),
           ],
         ),
       ),

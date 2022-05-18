@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../widgets/gradient_button.dart';
-import '../DoctorApp/Doctor/doctor.dart';
-import '../DoctorApp/info1.dart';
+import '../widgets/gradient_button.dart';
+import '../Doctor/doctor.dart';
 
 class RegisterForm extends StatefulWidget {
   @override

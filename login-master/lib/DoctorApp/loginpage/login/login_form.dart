@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../../register/register_screen.dart';
+import '../../../DoctorApp/register/register_screen.dart';
 import '../../Doctor/doctor.dart';
-import '../../../widgets/gradient_button.dart';
+import '../../widgets/gradient_button.dart';
 import 'login_screen.dart';
 
 class LoginForm extends StatefulWidget {
